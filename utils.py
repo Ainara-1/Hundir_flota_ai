@@ -20,8 +20,47 @@ def disparar(tablero, lista):
     else:
         tablero[fila][columna] = "#"
         print("AGUAAA!!!")
-        #turno = False
+        
     lista.append((fila,columna))
     return tablero, lista
 
 
+# crear barcos aleatorios
+#eslora=4
+def barcos_rival(tablero):
+    x=np.random.randint(9)
+    print(x)
+    y=np.random.randint(9)
+    print(y)
+    pos_inicial=(x,y)
+    print(pos_inicial)
+    orientacion = np.random.choice(["H","V"])
+    print(orientacion)
+
+    if orientacion == "V":
+        if x+3<=9:
+            tablero [x] [y]="O"
+            x1=x+1
+            tablero[x1] [y]="O"
+            x2=x1+1
+            tablero[x2] [y]="O"
+            x3=x2+1
+            tablero[x3] [y]="O" 
+        else:
+            print("Elija otra posicion")
+        
+    else:
+        if y+3<=9:
+            tablero[x][y]="O"
+            y1=y+1
+            tablero[x][y1]="O"
+            y2=y1+1
+            tablero[x][y2]="O"
+            y3=y2+1
+            tablero[x][y3]="O"
+        else:
+            print("Elija otra posicion")
+
+    print(tablero)
+    return(tablero)
+                

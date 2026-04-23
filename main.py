@@ -50,8 +50,7 @@ while True:
         time.sleep(3)
         print("TABLERO RIVAL BARCOS-55")
         print(tablero_rival_barcos)
-    #print("TABLERO JUGADOR BARCOS-57")
-    #print(tablero_jugador_barcos)
+    
     else:
         print("FIN DEL JUEGO")
 
