@@ -23,7 +23,7 @@ print(tablero_rival_barcos)
 print("          TABLERO JUGADOR BARCOS      ")
 print(tablero_jugador_barcos)
 time.sleep(3)
-print("Tu turno jugador")
+print("Tu turno jugador") 
 
 
 
